@@ -7,7 +7,6 @@ import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import cyberShowaTheme from './theme/theme';
 
-
 function App() {
   return (
     <ThemeProvider theme={cyberShowaTheme}>
