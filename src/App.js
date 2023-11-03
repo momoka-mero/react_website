@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import Header from './components/Header';
+import About from './components/About';
+import Skill from './components/Skill';
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import { ThemeProvider } from '@mui/material/styles';
+import cyberShowaTheme from './theme/theme';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={cyberShowaTheme}>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skill" element={<Skill />} />
+        </Routes>
+      </div>
+    </Router>
+    </ThemeProvider>
   );
 }
 
