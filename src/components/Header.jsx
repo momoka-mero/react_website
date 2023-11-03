@@ -6,7 +6,7 @@ import { Typography } from '@mui/material';
 const header = () => {
   return (
     <div>
-      <Typography variant="h4" className="neon-text">ここにロゴが入る</Typography>
+      <Typography variant="h4" className="neon-text">何か書く</Typography>
       <Button 
         variant="contained"
         color="primary"
