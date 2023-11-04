@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '@mui/material';
-import { Typography } from '@mui/material';
+import { Button,AppBar,Typography,Toolbar } from '@mui/material';
 
-const header = () => {
+const Header = () => {
   return (
     <div>
+      <AppBar component = "nav" >
+      <Toolbar>
       <Typography variant="h4" className="neon-text">何か書く</Typography>
       <Button 
         variant="contained"
@@ -28,8 +29,10 @@ const header = () => {
         to = '/skill'
         className="neon-button"
         >Skill</Button>
+      </Toolbar>
+      </AppBar>
     </div>
   )
 }
 
-export default header
+export default Header

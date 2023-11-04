@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 
 const cyberShowaTheme = createTheme({
   palette: {
-    type: 'dark', // ダークテーマをベースに
+    mode: 'dark', // ダークテーマをベースに
     primary: {
       main: '#ff4081', // ピンクのネオンカラー
     },

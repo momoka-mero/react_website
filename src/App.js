@@ -4,14 +4,16 @@ import Header from './components/Header';
 import About from './components/About';
 import Skill from './components/Skill';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
-import { ThemeProvider } from '@mui/material/styles';
+import { useTheme,ThemeProvider } from '@mui/material/styles';
 import cyberShowaTheme from './theme/theme';
 
 function App() {
+  const theme = useTheme();
+  
   return (
     <ThemeProvider theme={cyberShowaTheme}>
     <Router>
-      <div className="App">
+      <div className="App" >
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
