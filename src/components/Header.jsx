@@ -9,22 +9,22 @@ const Header = () => {
       <Toolbar>
       <Typography variant="h4" className="neon-text">何か書く</Typography>
       <Button 
-        variant="contained"
+        variant="outlined"
         color="primary"
         component = {Link}
         to = '/'
         className="neon-button"
         >Home</Button>
       <Button 
-        variant="contained"
-        color="secondary"
+        variant="outlined"
+        color="primary"
         component = {Link}
         to = '/about'
         className="neon-button"
         >About</Button>
       <Button 
-        variant="contained"
-        color="error"
+        variant="outlined"
+        color="primary"
         component = {Link}
         to = '/skill'
         className="neon-button"
