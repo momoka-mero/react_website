@@ -36,7 +36,7 @@ const cyberShowaTheme = createTheme({
             color: '#fff',
             textShadow: 
             '1px 5px 4px rgba(0,0,0,3),0 0 2px rgba(255,255,255,1),0 0 10px rgba(255,255,255,1),0 0 30px rgba(255,255,255,1),0 0 40px #ff00de,0 0 70px #ff00de',
-            boxShadow: '0 0 5px #ff4081, 0 0 10px pink, 0 0 15px pink, 0 0 20px pink',
+            boxShadow: '0 0 5px rgba(0,0,0,3), 0 0 10px rgba(0,0,0,3), 0 0 15px ff00de, 0 0 20px ff00de',
           }
         }
       }
