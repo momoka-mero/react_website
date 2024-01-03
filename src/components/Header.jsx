@@ -5,7 +5,7 @@ import { Button,AppBar,Typography,Toolbar,Box } from '@mui/material';
 const Header = () => {
   return (
     <div>
-      <AppBar component = "nav" >
+      <AppBar component = "nav" position='sticky' >
       <Toolbar>
       <Typography variant="h4" className="neon-text" sx={{ flexGrow: 1 }}>何か書く</Typography>
       <Box sx={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }} >

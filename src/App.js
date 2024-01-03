@@ -8,21 +8,27 @@ import { useTheme,ThemeProvider } from '@mui/material/styles';
 import cyberShowaTheme from './theme/theme';
 
 function App() {
-  const theme = useTheme();
-  
   return (
     <ThemeProvider theme={cyberShowaTheme}>
-    <Router>
-      <div className="App" >
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skill" element={<Skill />} />
-        </Routes>
-      </div>
-    </Router>
+      <Router>
+        <AppContent />
+      </Router>
     </ThemeProvider>
+  );
+}
+
+function AppContent() {
+  const theme = useTheme();
+
+  return (
+    <div className="App" style={{ backgroundImage: theme.palette.background.default }}>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skill" element={<Skill />} />
+      </Routes>
+    </div>
   );
 }
 

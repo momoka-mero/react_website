@@ -1,6 +1,5 @@
 import { createTheme } from '@mui/material/styles';
 
-
 const cyberShowaTheme = createTheme({
   palette: {
     mode: 'dark', 
@@ -14,7 +13,7 @@ const cyberShowaTheme = createTheme({
       main: '#f44336', // ネオン赤
     },
     background: {
-        default: 'linear-gradient(45deg, #ff0099, #493240, #ff6e7f)',
+        default: 'linear-gradient(45deg, #FFD1DC, #FF85A2, #B06699)', // 薄いピンク、薄いホットピンク、薄い紫、薄いインディゴ
     },
   },
   components: {

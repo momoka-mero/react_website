@@ -1,9 +1,9 @@
 import React from 'react'
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
 
 const Skill = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <Box style={{ display: 'flex', justifyContent: 'space-between', paddingTop: '64px', flexWrap:'wrap'}}>
       <Card style={{width:'25%',margin:'0 2.5%' }}>
         <CardMedia
           component="img"
@@ -15,7 +15,7 @@ const Skill = () => {
           <Typography gutterBottom variant="h5" component="div">
             Python
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="primary">
             hoge
           </Typography>
         </CardContent>
@@ -32,7 +32,7 @@ const Skill = () => {
           <Typography gutterBottom variant="h5" component="div">
             React
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="primary">
             hoge
           </Typography>
         </CardContent>
@@ -49,12 +49,13 @@ const Skill = () => {
           <Typography gutterBottom variant="h5" component="div">
             Machine Learning
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="primary">
             hoge
           </Typography>
         </CardContent>
       </Card>
-    </div>
+
+    </Box>
   );
 }
 
