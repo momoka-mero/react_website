@@ -13,7 +13,7 @@ const cyberShowaTheme = createTheme({
       main: '#f44336', // ネオン赤
     },
     background: {
-        default: 'linear-gradient(45deg, #FFD1DC, #FF85A2, #B06699)', // 薄いピンク、薄いホットピンク、薄い紫、薄いインディゴ
+        default: 'linear-gradient(45deg, #000000, #2F4F4F)', // 昭和、ネオン、サイバーパンク、可愛いテーマに合うような色合い（黒とダークスレートグレー）
     },
   },
   components: {

@@ -21,7 +21,7 @@ function AppContent() {
   const theme = useTheme();
 
   return (
-    <div className="App" style={{ backgroundImage: theme.palette.background.default }}>
+    <div className="App" style={{ color: theme.palette.text.primary, backgroundImage: theme.palette.background.default }}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
